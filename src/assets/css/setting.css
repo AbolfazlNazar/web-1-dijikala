@@ -1,5 +1,10 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --gray-color-100: #ECEDEF;
+  --gray-color-150: #B4AAA8;
+  --gray-color-200: #a1a3a8;
 }

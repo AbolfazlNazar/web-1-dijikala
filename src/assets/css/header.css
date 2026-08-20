@@ -1,0 +1,184 @@
+.header {
+  background-color: white;
+  .top {
+    width: 100%;
+    .imge-top-heder {
+      width: 100%;
+      & img {
+        width: 100%;
+        height: 60px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+    }
+  }
+  .middle {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 16px;
+    .middle-right {
+      width: 988.98px;
+      height: 44px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+      .middle-svg {
+        width: 195px !important;
+        height: 30px !important;
+        cursor: pointer;
+      }
+      .middle-search-box {
+        width: 500px;
+        height: 44px;
+        background-color: var(--gray-color-100);
+        border-radius: 99999px;
+        padding: 0 16px;
+        & form {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          & svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--gray-color-200) !important;
+          }
+          & input {
+            width: 428px;
+            height: 44px;
+            background-color: transparent;
+            border: unset;
+            outline: unset;
+          }
+        }
+      }
+    }
+    .middle-left {
+      width: calc(100% - 989.98px);
+      height: 44px;
+      display: flex;
+      align-items: center;
+      flex-flow: row wrap;
+      gap: 5px;
+      .svg-middle-left {
+        &:first-child {
+          fill: var(--gray-color-500);
+          margin: 0 4px;
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+        }
+        .btn-middle {
+          width: 134.02px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 9px;
+          border-radius: 7px;
+          border: 0.5px solid var(--gray-color-125);
+          outline: transparent;
+          fill: var(--gray-color-500);
+          background-color: transparent;
+          cursor: pointer;
+        }
+        &:nth-child(3) {
+          width: 1.09px;
+          height: 24px;
+          margin: 0 8px;
+          background-color: var(--gray-color-125);
+        }
+        &:last-child {
+          width: 24px;
+          height: 24px;
+          padding: 0 8px;
+          fill: var(--gray-color-500);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .bottom {
+    width: 100%;
+    height: 40px;
+    padding-right: 16px;
+    padding-left: 16px;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    .menu {
+      width: calc(100% - 121.06px);
+      height: 40px;
+      /* background-color: brown; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .menu-items {
+        width: 100%;
+        height: inherit;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        list-style: none;
+        gap: 13px;
+        & li:nth-of-type(1) span {
+          font-size: 15px;
+          color: var(--gray-color-600);
+        }
+        & li:nth-of-type(2) {
+          margin-right: 9px;
+          cursor: default;
+          color: var(--gray-color-125);
+        }
+        & li:nth-of-type(3) span {
+          font-size: 12px;
+          color: var(--gray-color-400);
+        }
+        & li:nth-of-type(4) span {
+          font-size: 12px;
+          color: var(--gray-color-400);
+        }
+        & li:nth-of-type(5) span {
+          font-size: 12px;
+          color: var(--gray-color-400);
+        }
+        & li:nth-of-type(6) span {
+          font-size: 12px;
+          color: var(--gray-color-400);
+        }
+        & li:nth-of-type(7) span {
+          font-size: 12px;
+          color: var(--gray-color-400);
+        }
+        & li:nth-of-type(8) {
+          cursor: default;
+          color: var(--gray-color-125);
+        }
+        & li:nth-of-type(9) span {
+          font-size: 12px;
+          color: var(--gray-color-400);
+        }
+        & li {
+          display: flex;
+          align-items: center;
+          gap: 7px;
+          cursor: pointer;
+          & svg {
+            width: 18px !important;
+            height: 18px !important;
+            fill: var(--gray-color-175) !important;
+          }
+        }
+        & li:nth-of-type(1) svg{
+            fill: var(--gray-color-600) !important;
+          }
+      }
+    }
+  }
+}

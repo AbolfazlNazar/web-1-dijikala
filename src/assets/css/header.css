@@ -106,7 +106,6 @@
   .bottom {
     width: 100%;
     height: 40px;
-    background-color: antiquewhite;
     margin-top: 10px;
     padding: 0 16px;
     display: flex;
@@ -116,7 +115,6 @@
     .bottom-right {
       width: 850px;
       height: 100%;
-      background-color: aqua;
       display: flex;
       flex-flow: row wrap;
       align-items: center;
@@ -124,48 +122,200 @@
       .bottom-menu {
         width: 100%;
         height: 100%;
-        background-color: blue;
         display: flex;
         flex-flow: row;
         justify-content: space-between;
         align-items: center;
-        .bottom-sub-menu {
-          /* width: 141px; */
-          height: 100%;
-          background-color: skyblue;
+        .bottom-sub-menu-one {
           display: flex;
           align-items: center;
+          gap: 5px;
+          cursor: pointer;
+          position: relative;
+          & svg {
+            width: 20px !important;
+            height: 20px !important;
+            font: var(--gray-color-500) !important;
+          }
+          & span {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--gray-color-600);
+          }
+          .menu {
+            width: 1120px;
+            height: 350px;
+            background-color: brown;
+            position: absolute;
+            top: 30px;
+            right: 0;
+            z-index: 100;
+            display: flex;
+            flex-flow: row wrap;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+            .submenu-right {
+              width: 184px;
+              height: 100%;
+              overflow-y: auto;
+              overflow-x: hidden;
+              border-left: 1px solid var(--gray-color-125);
+              .sub-menu-one {
+                width: 100%;
+                background-color: aqua;
+                display: grid;
+                grid-template-rows: repeat(19, 1fr);
+                .sub-menu-item-one {
+                  width: 100%;
+                  height: 52px;
+                  list-style: none;
+                  background-color: var(--gray-color-25);
+                  padding: 12px 8px;
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                  transition-delay: 250ms;
+                  & svg {
+                    width: 18px !important;
+                    height: 18px !important;
+                    fill: var(--gray-color-600) !important;
+                    transition-delay: 250ms;
+                  }
+                  & span {
+                    font-size: 12px;
+                    color: var(--gray-color-600);
+                    font-weight: 600;
+                    transition-delay: 250ms;
+                  }
+                }
+                .sub-menu-item-one:hover {
+                  background-color: white;
+                  & svg {
+                    fill: var(--red-color-500) !important;
+                  }
+                  & span {
+                    color: var(--red-color-500);
+                  }
+                }
+              }
+            }
+            .submenu-left {
+              width: calc(100% - 184px);
+              height: 100%;
+              background-color: white;
+              overflow-y: auto;
+              .title-menu {
+                width: 100%;
+                height: 26px;
+                margin: 20px 0 20px 0;
+                background-color: red;
+                & a {
+                  margin-right: 20px;
+                  text-decoration: unset;
+                  display: flex;
+                  align-items: center;
+                  gap: 7px;
+                  & span {
+                    font-size: 12px;
+                    color: var(--blue-color-500);
+                  }
+                  & svg {
+                    width: 16px !important;
+                    height: 16px !important;
+                    fill: var(--blue-color-500) !important;
+                  }
+                }
+              }
+              .menu-line {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 10px;
+                .menu-1 {
+                  width: 220px;
+                  background-color: aqua;
+                  display: grid;
+                  grid-template-rows: repeat(1, 1fr);
+                  gap: 40px;
+                  .mobile-column {
+                    display: grid;
+                    grid-template-rows: repeat(1, 1fr);
+                    margin-right: 20px;
+                    .title-mobile {
+                      display: flex;
+                      align-items: center;
+                      gap: 10px;
+                    }
+                    .sub-title-mobile {
+                      display: grid;
+                      grid-template-rows: repeat(1, 1fr);
+                      gap: 5px;
+                      & a {
+                        text-decoration: unset;
+                      }
+                    }
+                  }
+                }
+                .menu-2 {
+                  width: 220px;
+                  background-color: aqua;
+                }
+                .menu-3 {
+                  width: 220px;
+                  background-color: aqua;
+                }
+                .menu-4 {
+                  width: 220px;
+                  background-color: aqua;
+                }
+              }
+            }
+          }
+        }
+        .bottom-sub-menu {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          gap: 3px;
+          cursor: pointer;
+
           & svg {
             width: 18px !important;
             height: 18px !important;
+            fill: var(--gray-color-200) !important;
           }
           & span {
-            /* width: 100; */
-            /* height: 26px; */
-            background-color: cornflowerblue;
             font-size: 12px;
+            color: var(--gray-color-200);
           }
           & a {
             display: flex;
             align-items: center;
+            gap: 3px;
+            text-decoration: unset;
             & svg {
               width: 18px !important;
               height: 18px !important;
+              fill: var(--gray-color-200) !important;
             }
             & span {
-              width: 71px;
-              height: 26px;
-              background-color: cornflowerblue;
               font-size: 12px;
+              color: var(--gray-color-200);
             }
           }
-          &:nth-of-type(2) span {
-            width: 2px;
-            height: 26px;
+          &:nth-of-type(2) {
+            width: 1px;
+            height: 16px;
+            background-color: var(--gray-color-125);
+            margin-right: 7px;
+            cursor: default;
           }
-          &:nth-of-type(8) span {
-            width: 2px;
-            height: 26px;
+          &:nth-of-type(8) {
+            width: 1px;
+            height: 16px;
+            background-color: var(--gray-color-125);
+
+            cursor: default;
           }
         }
       }

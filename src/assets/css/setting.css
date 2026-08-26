@@ -12,12 +12,24 @@
   font-family: yekan;
 }
 :root {
+  --gray-color-0: white;
+  --gray-color-25: #f0f0f1;
+  --gray-color-75: #f3f3f4;
+  --gray-color-90: #f4f4f4;
   --gray-color-100: #ecedef;
   --gray-color-125: #e0e0e2;
+  --gray-color-135: #e1e1e3;
   --gray-color-150: #b4aaa8;
   --gray-color-175: #a1a3a8;
   --gray-color-200: #a1a3a8;
-  --gray-color-400: #62666D;
+  --gray-color-250: #c0c2c5;
+  --gray-color-275: #8b8b8b;
+  --gray-color-300: #81858b;
+  --gray-color-400: #62666d;
   --gray-color-500: #424750;
-  --gray-color-600: #3F4064;
+  --gray-color-550: #3c4b6d;
+  --gray-color-600: #3f4064;
+  --red-color-500: #ef4056;
+  --red-color-600: #d52d4e;
+  --blue-color-500: #0d4485;
 }

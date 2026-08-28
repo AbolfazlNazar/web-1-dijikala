@@ -154,7 +154,7 @@
             flex-direction: row;
             flex-wrap: nowrap;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-            /* display: none; */
+            display: none;
             .submenu-right {
               width: 184px;
               height: 100%;

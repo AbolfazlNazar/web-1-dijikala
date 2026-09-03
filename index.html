@@ -188,7 +188,7 @@
                 <div class="menu">
                   <div class="submenu-right">
                     <ul class="sub-menu-one">
-                      <li class="sub-menu-item-one">
+                      <li class="sub-menu-item-one" data-category="mobile">
                         <svg
                           style="
                             width: 18px;
@@ -214,7 +214,7 @@
                         </svg>
                         <span>موبایل</span>
                       </li>
-                      <li class="sub-menu-item-one">
+                      <li class="sub-menu-item-one" data-category="pen">
                         <svg
                           style="
                             width: 18px;
@@ -240,7 +240,7 @@
                         </svg>
                         <span>لوازم تحریر</span>
                       </li>
-                      <li class="sub-menu-item-one">
+                      <li class="sub-menu-item-one" data-category="laptop">
                         <svg
                           style="
                             width: 18px;
@@ -669,7 +669,7 @@
                     </ul>
                   </div>
                   <div class="submenu-left">
-                    <div class="mobil-product mobiletitle">
+                    <div class="mobil-product category-content" data-content="mobile">
                       <div class="title-heade">
                         <span>همه محصولات موبایل</span>
                         <svg
@@ -1145,7 +1145,9 @@
                           <div class="sub-menu-range">
                             <span>پاور استیشن</span>
                           </div>
-                          <div class="sub-menu-range"><span>مونوپاد</span></div>
+                          <div class="sub-menu-range">
+                            <span>مونوپاد</span>
+                          </div>
                           <div class="sub-menu-range">
                             <span>کاور ایرپاد</span>
                           </div>
@@ -1282,6 +1284,31 @@
                         </div>
                       </div>
                     </div>
+                    <div class="pen-product category-content" data-content="pen">
+                      <div class="title-heade">
+                        <span>همه محصولات لوازم تحریر</span>
+                        <svg
+                          style="
+                            width: 18px;
+                            height: 18px;
+                            fill: var(--color-icon-secondary);
+                          "
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <defs>
+                            <symbol
+                              id="chevronLeft"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"
+                              ></path>
+                            </symbol>
+                          </defs>
+                          <use href="#chevronLeft"></use>
+                        </svg>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -1388,7 +1415,12 @@
               </li>
             </ul>
           </div>
-          <div class="bottom-left"></div>
+          <div class="bottom-left">
+            <div class="location">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+              <span>انتخاب آدرس</span>
+            </div>
+          </div>
         </div>
         <!-- bottom end -->
       </div>

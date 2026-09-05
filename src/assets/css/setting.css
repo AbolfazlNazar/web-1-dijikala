@@ -31,7 +31,10 @@
   --gray-color-550: #3c4b6d;
   --gray-color-600: #3f4064;
   --red-color-500: #ef4056;
+  --red-color-550: #EF3C52;
   --red-color-600: #d52d4e;
+  --red-color-625: #D32F2F;
+  --red-color-650: #E3113B;
   --blue-color-500: #0d4485;
   --black-color-500: #0c0c0c;
   --black-color-1000: #000000;
@@ -41,4 +44,5 @@
   --brown-color-500: #934c0e;
   --green-color-200: #70bb2b;
   --orange-color-500: #F57F17;
+  --yellow-color-300: #F9BC00;
 }

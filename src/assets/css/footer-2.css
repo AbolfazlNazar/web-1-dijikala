@@ -1,4 +1,4 @@
-.footer {
+.footer-2 {
   width: 100%;
   background-color: white;
   .line-1 {
@@ -30,7 +30,6 @@
         cursor: pointer;
         & span {
           color: var(--gray-color-200);
-          
         }
         & svg {
           fill: var(--gray-color-200) !important;

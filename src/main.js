@@ -15,7 +15,7 @@ menuItems.forEach((item) => {
       });
 
       const selectedContent = document.querySelector(
-        `[data-content="${category}"]`
+        `[data-content="${category}"]`,
       );
 
       if (selectedContent) {
@@ -25,6 +25,14 @@ menuItems.forEach((item) => {
   });
 });
 // location
-// document.querySelector("location").addEventListener("click",function(){
-// document.querySelector("modal").classList.add("activ")
-// })
+document.querySelector(".location").addEventListener("click", function () {
+  document.querySelector(".modal").classList.add("active", "fadein");
+});
+document.querySelector(".svg-modal").addEventListener("click", function () {
+  document.querySelector(".modal").classList.add("fadeout");
+  setTimeout(function () {
+    document
+      .querySelector(".modal")
+      .classList.remove("active", "fadeout", "fadein");
+  }, 400);
+});

@@ -2,7 +2,7 @@
   .support-icon {
     width: 48px;
     height: 48px;
-    background-color: rgb(53, 193, 248);
+    background: linear-gradient(140deg , #7857F0 30%,#3F78FB 100%);
     position: fixed;
     bottom: 25px;
     left: 25px;

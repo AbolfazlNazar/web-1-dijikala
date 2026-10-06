@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      html,body{
+        scroll-behavior: smooth;
+      }
+    </style>
     <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./src/assets/css/main.css" />
   </head>
   <body>
-    <div>
+    <div id="up">
       <!-- start header -->
       <header class="header-2">
         <!-- top page - 2start -->
@@ -14490,7 +14495,7 @@
           </div>
           <div class="btn-footer">
             <button class="btn-left">
-              <span>بازگشت به بالا</span>
+              <a href="#up">بازگشت به بالا</a>
               <svg
                 style="
                   width: 24px;
